@@ -1,11 +1,15 @@
-import { HTTPS, SWAPI_PEOPLE, SWAPI_ROOT, GUIDE_IMG_SRC, GUIDE_EXT } from "../constants/api"
+import { HTTPS, SWAPI_PEOPLE, SWAPI_ROOT, GUIDE_IMG_SRC, GUIDE_EXT, PEOPLE_PAGE_PARAMS } from "../constants/api"
 
+export const getPeoplePageID = url => {
+    const page = url.lastIndexOf(PEOPLE_PAGE_PARAMS)
+    const id = url.slice(page+PEOPLE_PAGE_PARAMS.length, url.length)
+    return Number(id);
+}
 
 const checkProtocol = url => {
     if(url.indexOf(HTTPS) !== -1){
         return HTTPS
     }
-
     return HTTPS
 }
 

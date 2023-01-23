@@ -1,0 +1,23 @@
+.button__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.button__item {
+    font-size: 1.2rem;
+    padding: .2rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    transition: .3s;
+}
+
+.button__item:hover {
+    background-color: #fff;
+    color: #000;
+}

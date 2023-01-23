@@ -3,10 +3,12 @@ export const HTTP = 'http://'
 
 export const SWAPI_ROOT = 'swapi.dev/api/';
 export const SWAPI_PEOPLE = 'people';
+export const PEOPLE_PAGE_PARAMS = '/?page='
 
 //https://starwars-visualguide.com/assets/img/characters/1.jpg
 
-export const API_PEOPLE = HTTPS + SWAPI_ROOT + SWAPI_PEOPLE;
+export const API_PEOPLE = HTTPS + SWAPI_ROOT + SWAPI_PEOPLE + PEOPLE_PAGE_PARAMS;
+export const API_PERSON = HTTPS + SWAPI_ROOT + SWAPI_PEOPLE;
 
 const GUIDE_SRC = 'starwars-visualguide.com/assets/img/'
 const GUIDE_CHARACTERS = 'characters/'

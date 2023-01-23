@@ -1,0 +1,12 @@
+.char__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.char__list {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.5rem;
+    list-style: none;
+}

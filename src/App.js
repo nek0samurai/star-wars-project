@@ -15,6 +15,7 @@ import Home from './pages/Home/Home';
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 
 import styles from './App.module.css'
+import Person from "./pages/Person/Person";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home/>} exact></Route>
             <Route path="/people" element={<People/>} exact></Route>
             <Route path="/fail" element={<ErrorMessage/>} exact></Route>
+            <Route path="/people/:id" element={<Person/>} exact></Route>
           </Routes>
       </div>
     
